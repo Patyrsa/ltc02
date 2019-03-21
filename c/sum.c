@@ -1,7 +1,16 @@
-#include "stdio.h"
-int sum(int a, int b) {
-    return a+b;
-}
-int main() {
-    printf("sum=%d\n", sum(10,3));
-}
+int main(void){
+	
+  int  height, weight;
+  double imt;
+  
+  printf("Your weight?(kg)\n");
+  scanf("%d", weight); 
+	
+  printf("Your height?(sm)\n");
+  scanf("%d", &height); 
+
+  imt = weight/(height*height);
+	
+  return 0;
+} 
+if 
