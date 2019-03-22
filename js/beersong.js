@@ -13,7 +13,7 @@ var word = "bottles";
 else {     
         var word = "bottle";
         console.log(count + " " + word + " of beer on the wall.");
-        console.log("No more " + word + " of beer on the wall.");        
+        console.log("No more " + word + " of beer on the wall.\nWe've taken them down and passed them around; now we're drunk and passed out!");        
       }
 }
 beersong(99);
