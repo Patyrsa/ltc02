@@ -9,4 +9,5 @@ function isPalindrome(str) {
     }
     console.log(isPalindrome("anna"));
     console.log(isPalindrome("ghkhgkjh"));
+    console.log(isPalindrome("level"));
 
