@@ -1,10 +1,20 @@
 function isPalindrome(text) {
-    var textLen = text.lenght;
-    var textLC = text.split(" \n.,;:!?-_+-@#$%^&*,'<>`~()[]{}").join("").toLowerCase();
-if(textLC==text) {
-    return true
-} else {
-    return false
+    var characters = "abcdifghijklmnopqrstuvwxyz";
+    var str = text.toLowerCase();
+    if(str.length < 2){
+        return true;
+    } else {
+        if(characters.indexOf(str[0])<0) {
+            return isPalindrome(str.substr(1,str.length - 1));
+        }else if(characters.indexOf(str[str.length - 1])<0) {
+			return isPalindrome(str.substr(0,str.length - 1));
+        }else if(str[0]==str[str.length - 1]){
+			return isPalindrome(str.substr(1,str.length - 2));
+        }else{
+            return false;
+        }     
+    }   
 }
-}
-console.log(isPalindrome("A man, a plan, a canal. Panama."));
+console.log(isPalindrome("Not New \\York, Roy went on."));
+console.log(isPalindrome("A man, a plan a canal-Panama"));
+console.log(isPalindrome("jkjlkjlkjgg"));
