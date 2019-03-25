@@ -1,5 +1,5 @@
 function isPalindrome(text) {
-    var characters = "abcdifghijklmnopqrstuvwxyz";
+    var characters = "abcdifghijklmnopqrstuvwxyzабвгдеёжзиклмнопрстуфхцчшщъыьэюя";
     var str = text.toLowerCase();
     if(str.length < 2){
         return true;
